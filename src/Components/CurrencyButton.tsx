@@ -3,12 +3,12 @@ import type { PropsWithChildren } from 'react'
 import React from 'react'
 
 type currecyPropType = PropsWithChildren<{
-    flag: string;
     name : string;
+    flag: string;
 }>
 
 
-const curreyButton = (properites : currecyPropType):JSX.Element => {
+const CurrencyButton = (properites : currecyPropType):JSX.Element => {
     return(
         <View style = {styles.container}>
             <Text style= {styles.flag}>{properites.flag}</Text>
@@ -32,4 +32,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default curreyButton
+export default CurrencyButton
